@@ -53,8 +53,15 @@ Use curl through the SOCKS5 proxy to fetch your IP information:
 curl --socks5-hostname proxyuser:proxypass@127.0.0.1:1080 https://ipinfo.io
 ```
 
+If you are running this from PowerShell, use `curl.exe` instead of `curl`:
+
+```powershell
+curl.exe --socks5-hostname "proxyuser:proxypass@127.0.0.1:1080" https://ipinfo.io
+```
+
 You should see a JSON response from `ipinfo.io` and a connection log line in the proxy terminal.
 
 ## Reflection Note
 
 See `REFLECTION.md`.
+
